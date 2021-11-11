@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Code from "./Code/Code";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="flex">
+        <div className="block">
+          <Code isReflow={false}/>
+        </div>
+        <div className="block">
+          <Code isReflow={true} />
+        </div>
+      </div>
     </div>
   );
 }
